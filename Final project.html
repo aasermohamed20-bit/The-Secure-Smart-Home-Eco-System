@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA Smart Home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #1E293B;
+  color: #F8F6F0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0F172A;
+  border-bottom: 2px solid #D9A74A;
+}
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #D9A74A;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  color: #F8F6F0;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: #D9A74A;
+}
+
+.header-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #1E293B;
+}
+
+.header-section h1 {
+  color: #D9A74A;
+  margin-bottom: 10px;
+}
+
+.header-section p {
+  color: #E2E8F0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Zones Section */
+.zones-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.zones-section h2 {
+  color: #F8F6F0;
+  margin-bottom: 25px;
+}
+
+.zones-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.zone-card {
+  background-color: #F8F6F0;
+  color: #1E293B;
+  border-radius: 12px;
+  width: 300px;
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #E2E8F0;
+}
+
+.zone-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.zone-card h3 {
+  color: #1E293B;
+  margin-bottom: 8px;
+}
+
+.zone-card p {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #0F172A;
+}
+
+.contact-section h2 {
+  color: #D9A74A;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+  background-color: #1E293B;
+  color: #F8F6F0;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #D9A74A;
+  color: #0F172A;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #b88a38;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0F172A;
+  border-top: 1px solid #334155;
+  color: #94A3B8;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class ="logo">AURA Smart Home</div>
+    <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#zones">Zones</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+
+
+<header id="home" class="header-section">
+  <h1>Smart Home Automation Dashboard</h1>
+  <p>Control and monitor your living space, security, and climate efficiently from one place.</p>
+</header>
+<!-- Zones Section -->
+<section id="zones" class="zones-section">
+  <h2>Home Zones</h2>
+  <div class="zones-container">
+    
+    <!-- Living Room Zone -->
+    <div class="zone-card">
+      <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500" alt="Living Room Zone">
+      <h3>Living Room</h3>
+      <p>Active monitoring for smart lights, ambient temperature, and media center.</p>
+    </div>
+
+    <!-- Kitchen Zone -->
+    <div class="zone-card">
+      <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=500" alt="Kitchen Zone">
+      <h3>Kitchen</h3>
+      <p>Smart appliance status, safety sensors, and power management control.</p>
+    </div>
+
+    <!-- Security Zone -->
+    <div class="zone-card">
+      <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=500" alt="Security Zone">
+      <h3>Security System</h3>
+      <p>Real-time surveillance feeds, motion detectors, and door lock status.</p>
+    </div>
+
+  </div>
+</section>
+<!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Support</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy;2026 AURA Smart Home Automation. All rights reserved. | Created by Aaser Mohamed.</p>
+  </footer>
+
+</body>
+</html>
+</body>
+</html>
